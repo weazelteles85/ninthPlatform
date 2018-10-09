@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
+
+  slideOpts = {
+    init: 'true',
+    grabCursor: 'true',
+    autoplay: {
+      delay: 8000,
+    },
+  };
+
 }

@@ -1,0 +1,61 @@
+<!-- Header on Mobile Devices -->
+<ion-header *ngIf="windowSize < 768">
+  <ion-toolbar>
+    <ion-row>
+      <ion-col float-left size="2">
+        <ion-buttons>
+          <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+      </ion-col>
+      <ion-col size="8">
+        <a href="/home">
+          <img class="logoImg" src="/src/assets/images/Logo.png" alt="Logo">
+        </a>
+      </ion-col>
+      <ion-col size="2" align-self-end>
+        <ion-button color="primary" href="login" float-right>
+          <span>
+            <ion-icon color="light" name="log-in"></ion-icon>
+          </span>Login
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-toolbar>
+</ion-header>
+
+<!-- Header on Desktops and with larger Monitors -->
+<ion-header *ngIf="windowSize >= 768">
+  <ion-toolbar>
+    <ion-row>
+      <ion-col size="6" float-left>
+        <a href="/home">
+          <img class="logoImg" src="/src/assets/images/Logo.png" alt="Logo">
+        </a>
+      </ion-col>
+      <ion-col size="6" float-right>
+        <ion-button color="primary" float-right href="login">
+          <span>
+            <ion-icon color="light" name="log-in"></ion-icon>
+          </span>Login
+        </ion-button>
+        <ion-item float-right href="register"> Register </ion-item>
+      </ion-col>
+      <ion-col>
+        <ion-row justify-content-center>
+          <ion-item loginc ion-active icon="home" href="/" (click)="onClickLink()">
+            <ion-icon name="home"></ion-icon> Home
+          </ion-item>
+          <ion-item #aboutUs href="tax-preparation" (click)="onClickLink()">
+            <ion-icon name="analytics"></ion-icon> Page 2
+          </ion-item>
+          <ion-item #payroll href="payroll" (click)="onClickLink()">
+            <ion-icon name="logo-usd"></ion-icon> Payroll Services
+          </ion-item>
+          <ion-item #bookkeeping href="bookkeeping" (click)="onClickLink()">
+            <ion-icon name="book"></ion-icon> Page 3
+          </ion-item>
+        </ion-row>
+      </ion-col>
+    </ion-row>
+  </ion-toolbar>
+</ion-header>
