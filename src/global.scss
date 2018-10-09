@@ -11,36 +11,33 @@
 @import "~@ionic/angular/css/flex-utils.css";
 @import '~firebaseui/dist/firebaseui.css';
 
-.myHeader {
-    background-color: blue;
-    margin-bottom: 200px;
-    position: absolute;
-}
 
 ion-item {
     transition: background-color .2s linear;
 }
 
 ion-item:hover {
-    background-color: #87BCDE;
+    background-color: #6BAA75;
 }
 
 ion-header {
     font-family: 'Noto Sans', sans-serif;
-    color: #424242;
+}
+
+ion-toolbar {
+    --background: #F9FCF6;
 }
 
 ion-content {
-    --background: #FBFBFB;
+    --background: #262626;
 }
 
 #smallLogo {
-    width: 40px;
-    margin-top: 20px;
 }
 
 ion-content p, h4, h5, h6 {
-    font-family: 'Noto Sans',sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
 
 
@@ -53,7 +50,8 @@ ion-toolbar {
 }
 
 ion-footer {
-    font-family: 'Noto Sans',sans-serif;
+    font-family: 'Open Sans', sans-serif;
+font-family: 'Raleway', sans-serif;
 }
 
 ion-footer img {
@@ -71,12 +69,12 @@ ion-footer p {
 :root {
 
     /** primary **/
-    --ion-color-primary: #5EA549;
+    --ion-color-primary: #e69e21;
     --ion-color-primary-rgb: 56,128,255;
     --ion-color-primary-contrast: #ffffff;
     --ion-color-primary-contrast-rgb: 255,255,255;
-    --ion-color-primary-shade: rgb(96, 173, 144);
-    --ion-color-primary-tint: rgb(145, 255, 213);
+    --ion-color-primary-shade: rgb(143, 102, 31);
+    --ion-color-primary-tint: rgb(255, 204, 115);
   
     /** secondary **/
     --ion-color-secondary: #74D3AE;

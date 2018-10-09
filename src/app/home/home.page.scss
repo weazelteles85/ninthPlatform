@@ -1,76 +1,55 @@
 
-h1, h2, h3, h5 {
+.introBackGround {
+    position: relative;
+    left: -20px;
+    top: -20px;
+    width: 103%;
+    background-image: url("/src/assets/images/ExamplePic.png");
+    background-size:     cover;                     
+    background-repeat:   no-repeat;
+    background-position: center center; 
+    height: 800px;
+}
+
+.HomePageLogo {
+    height: 340px;
+    margin-top: 80px;
+}
+
+.servicesButtons {
+    height: 200px;
+    margin: 30px;
+}
+
+.servicesIcon {
+    font-size: 100pt;
     text-align: center;
-    color: #424242;
 }
 
-p {
-    color: #424242;
-    font-size: 1.2em;
-    text-align: justify
+h1, h2, h3, h4, h5, p {
+    color: #F9FCF6;
 }
 
-.newYorkImg {
-    margin-top: 10px;
+.centerText {
+    text-align: center;
 }
 
 
 // Xl Screens 1140px and Higher
 @media screen and (min-width: 1140px) {
-    ion-slide ion-img {
-        margin-top: 30px;  
-    } 
-    p {
-        letter-spacing: 2.5px;
-        line-height: 1.5;
-    }
-    .newYorkImg {
-        float: right;
-        width: 500px;
-        padding: 10px;
-        margin: 10px;
-    }
+
 }
 // lg Screen 960px to 1139px
 @media screen and (min-width: 960px) and (max-width: 1139px){ 
-    ion-slide ion-img {
-        margin-top: 60px;
-    }
-    .newYorkImg {
-        float: right;
-        width: 400px;
-        padding: 10px;
-        margin: 10px;
-    }
+
 }
 
 // md screen 720px to 956px
 @media screen and (min-width: 720px) and (max-width: 956px) {
-    ion-slide ion-img {
-        margin-top: 80px;
-    }
 
-    ion-slides {
-        position: relative;
-        width: 110%;
-        left: -28px;
-        top: -10px;
-    }
-
-    .newYorkImg {
-        float: right;
-        width: 300px;
-        padding: 10px;
-        margin: 10px;
-    }
 }
 
 // xs 719 and under
 @media screen and (max-width: 719px) {
-    ion-slides {
-        position: relative;
-        width: 118%;
-        left: -26px;
-        top: -10px;
-    }
+
 }

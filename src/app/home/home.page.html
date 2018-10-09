@@ -1,7 +1,52 @@
 <ion-content padding>
+  <div class="introBackGround">
+    <ion-row justify-content-center>
+      <img class="HomePageLogo" src="/src/assets/Logo/logo. white. png.png" alt="">
+    </ion-row>
+    <ion-row justify-content-center>
+      <ion-button shape="round" size="large" class="servicesButtons" color="primary" (click)="onClick()">
+        Design Services
+      </ion-button>
+      <ion-button shape="round" size="large" class="servicesButtons" color="primary" (click)="onClick()">
+        Rendering Services
+      </ion-button>
+    </ion-row>
+  </div>
   <ion-row>
-    <ion-col size="12">
-      Home Page Content
+    <ion-col offset="2" sizeXl="8">
+      <ion-row>
+        <ion-col sizeXl="4">
+            <ion-row justify-content-center>
+                <ion-col class="centerText" size="12">
+                    <ion-icon size="12" class="servicesIcon" color="primary" name="cube"></ion-icon>
+                </ion-col>
+                <ion-col justify-content-center size="12">
+                    <h3 class="centerText">Design & Specification Services</h3>
+                </ion-col>
+              </ion-row>
+        </ion-col>
+        <ion-col sizeXl="4">
+          <ion-row justify-content-center>
+            <ion-col class="centerText" size="12">
+                <ion-icon size="12" class="servicesIcon" color="primary" name="brush"></ion-icon>
+            </ion-col>
+            <ion-col justify-content-center size="12">
+                <h3 class="centerText">Rendering Services</h3>
+            </ion-col>
+          </ion-row>
+        </ion-col>
+        <ion-col sizeXl="4">
+            <ion-row justify-content-center>
+                <ion-col class="centerText" size="12">
+                    <ion-icon size="12" class="servicesIcon" color="primary" name="help-buoy"></ion-icon>
+                </ion-col>
+                <ion-col justify-content-center size="12">
+                    <h3 class="centerText">Support</h3>
+                </ion-col>
+              </ion-row>
+        </ion-col>
+      </ion-row>
     </ion-col>
   </ion-row>
+  <div class="footerSpace"></div>
 </ion-content>
