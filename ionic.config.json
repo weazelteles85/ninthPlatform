@@ -1,0 +1,8 @@
+{
+  "name": "ninthPlatform",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular",
+  "pro_id": "0a3828c9"
+}
