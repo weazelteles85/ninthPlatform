@@ -17,7 +17,12 @@ ion-item {
 }
 
 ion-item:hover {
-    background-color: #6BAA75;
+    background-color: #064789;
+    color: #F9FCF6;
+}
+
+ion-button:hover {
+    --ion-color-primary: rgb(250, 155, 71);
 }
 
 ion-header {
@@ -42,11 +47,17 @@ ion-content p, h4, h5, h6 {
 
 
 ion-icon {
-
+    color: #ED7F1E;
 }
 
 ion-toolbar {
+    color: #262626;
+}
 
+ion-menu ion-item {
+    background-color: #262626;
+    color: #F9FCF6;
+    font-size: 16pt;
 }
 
 ion-footer {
@@ -62,22 +73,22 @@ ion-footer p {
 }
 
 .footerSpace {
-    margin-bottom: 200px;
+    margin-bottom: 100px;
 }
 
 /** Ionic CSS Variables **/
 :root {
 
     /** primary **/
-    --ion-color-primary: #e69e21;
-    --ion-color-primary-rgb: 56,128,255;
+    --ion-color-primary: #ED7F1E;
+    --ion-color-primary-rgb: 237, 127, 30;
     --ion-color-primary-contrast: #ffffff;
     --ion-color-primary-contrast-rgb: 255,255,255;
-    --ion-color-primary-shade: rgb(143, 102, 31);
-    --ion-color-primary-tint: rgb(255, 204, 115);
+    --ion-color-primary-shade: rgb(184, 97, 22);
+    --ion-color-primary-shade: rgb(255, 155, 67);
   
     /** secondary **/
-    --ion-color-secondary: #74D3AE;
+    --ion-color-secondary: #C97D60;
     --ion-color-secondary-rgb: 12,209,232;
     --ion-color-secondary-contrast: #ffffff;
     --ion-color-secondary-contrast-rgb: 255,255,255;
@@ -85,7 +96,7 @@ ion-footer p {
     --ion-color-secondary-tint: rgb(118, 248, 198);
   
     /** tertiary **/
-    --ion-color-tertiary: #7044ff;
+    --ion-color-tertiary: #064789;
     --ion-color-tertiary-rgb: 112,68,255;
     --ion-color-tertiary-contrast: #ffffff;
     --ion-color-tertiary-contrast-rgb: 255,255,255;
@@ -133,7 +144,7 @@ ion-footer p {
     --ion-color-medium-tint: #a2a4ab;
   
     /** light **/
-    --ion-color-light: #f4f5f8;
+    --ion-color-light: #F9FCF6;
     --ion-color-light-rgb: 244,244,244;
     --ion-color-light-contrast: #000000;
     --ion-color-light-contrast-rgb: 0,0,0;

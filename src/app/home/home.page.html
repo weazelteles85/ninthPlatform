@@ -4,47 +4,100 @@
       <img class="HomePageLogo" src="/src/assets/Logo/logo. white. png.png" alt="">
     </ion-row>
     <ion-row justify-content-center>
-      <ion-button shape="round" size="large" class="servicesButtons" color="primary" (click)="onClick()">
+      <ion-button shape="round" size="large" class="servicesButtons" color="primary" href="/design">
         Design Services
       </ion-button>
-      <ion-button shape="round" size="large" class="servicesButtons" color="primary" (click)="onClick()">
+      <ion-button shape="round" size="large" class="servicesButtons" color="primary" href="/rendering" >
         Rendering Services
       </ion-button>
     </ion-row>
   </div>
+  <!-- **************** Collumns with Services Section Bellow ***************** -->
   <ion-row>
-    <ion-col offset="2" sizeXl="8">
-      <ion-row>
-        <ion-col sizeXl="4">
-            <ion-row justify-content-center>
-                <ion-col class="centerText" size="12">
-                    <ion-icon size="12" class="servicesIcon" color="primary" name="cube"></ion-icon>
-                </ion-col>
-                <ion-col justify-content-center size="12">
-                    <h3 class="centerText">Design & Specification Services</h3>
-                </ion-col>
-              </ion-row>
-        </ion-col>
-        <ion-col sizeXl="4">
-          <ion-row justify-content-center>
+    <ion-col size="12">
+      <h1 id="title" class="centerText">Quality customized services for your care</h1>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col offsetXl="2" sizeXl="8">
+      <ion-row justify-content-center>
+        <ion-col sizeXs="12" sizeXl="4">
+          <ion-row>
             <ion-col class="centerText" size="12">
-                <ion-icon size="12" class="servicesIcon" color="primary" name="brush"></ion-icon>
+              <ion-icon size="12" class="servicesIcon" color="primary" name="cube"></ion-icon>
             </ion-col>
-            <ion-col justify-content-center size="12">
-                <h3 class="centerText">Rendering Services</h3>
+          </ion-row>
+          <ion-row>
+            <ion-col size="12">
+              <h3 class="centerText">Design & Specification Services</h3>
+              <p class="centerText">
+                We provide fast, accurate, service to keep your sales cycle moving forward.
+                No matter the project size and scope we focus on timing, accuracy, and concierge
+                service for our customers.
+              </p>
             </ion-col>
           </ion-row>
         </ion-col>
-        <ion-col sizeXl="4">
-            <ion-row justify-content-center>
-                <ion-col class="centerText" size="12">
-                    <ion-icon size="12" class="servicesIcon" color="primary" name="help-buoy"></ion-icon>
-                </ion-col>
-                <ion-col justify-content-center size="12">
-                    <h3 class="centerText">Support</h3>
-                </ion-col>
-              </ion-row>
+        <ion-col sizeXs="12" sizeXl="4">
+          <ion-row>
+            <ion-col class="centerText" size="12">
+              <ion-icon size="12" class="servicesIcon" color="secondary" name="brush"></ion-icon>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col size="12">
+              <h3 class="centerText">Rendering Services</h3>
+              <p class="centerText">
+                With a focus on raising the standards of quality, we have invested in the
+                latest technology platforms, improved turn-around for a higher quality product.
+              </p>
+            </ion-col>
+          </ion-row>
         </ion-col>
+        <ion-col sizeXs="12" sizeXl="4">
+          <ion-row>
+            <ion-col class="centerText" size="12">
+              <ion-icon size="12" class="servicesIcon" color="tertiary" name="help-buoy"></ion-icon>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col size="12">
+              <h3 class="centerText">Support</h3>
+              <p class="centerText">
+                Availability and responsiveness are qualities you have of in house employees.
+                We incorporate into your process to ensure seamless handoffs of work. Not only
+                reducing your overhead but also improving efficiencies at the same time.
+              </p>
+            </ion-col>
+          </ion-row>
+        </ion-col>
+      </ion-row>
+    </ion-col>
+  </ion-row>
+  <!--*************** About Us Section Bellow  *****************-->
+  <ion-row>
+    <ion-col offsetXl="2" sizeXl="8">
+      <ion-row>
+        <ion-col size="12">
+          <h1 class="centerText">Our Goal</h1>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="12">
+          <ion-img id="aboutUsPic" src="/src/assets/images/AboutUsPic.jpg" alt="Golden Gate Bridge"></ion-img>
+          <p id="aboutUsText">
+            Ninthplatform’s is creating platforms where collaboration makes businesses simplified and fluid.
+            By making day to day operational tasks affordable and personal, Ninthplatform is creating a place
+            where companies can control their bottom line and improve the quality of their work.
+            Concierge service brought to companies that are in transition, need overflow support, or
+            want a full time strategic partner.
+          </p>
+        </ion-col>
+      </ion-row>
+      <ion-row justify-content-center>
+          <ion-button shape="round" size="large" class="servicesButtons" color="primary" (click)="onClick()">
+            <ion-icon color="light" slot="start" name="mail"></ion-icon> Contact Us
+          </ion-button>
       </ion-row>
     </ion-col>
   </ion-row>

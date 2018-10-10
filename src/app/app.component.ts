@@ -17,27 +17,22 @@ export class AppComponent {
       icon: 'home'
     },
     {
-      title: 'Page 2',
-      url: '/tax-preparation',
-      icon: 'analytics'
+      title: 'Design',
+      url: '/design',
+      icon: 'cube'
     },
     {
-      title: 'Page 3',
-      url: '/payroll',
-      icon: 'logo-usd'
+      title: 'Rendering',
+      url: '/rendering',
+      icon: 'brush'
     },
     {
-      title: 'Page 4',
-      url: '/bookkeeping',
-      icon: 'book'
+      title: 'About',
+      url: '/about-us',
+      icon: 'happy'
     },
     {
-      title: 'Page 5',
-      url: '/business-services',
-      icon: 'briefcase'
-    },
-    {
-      title: 'Page 6',
+      title: 'Contact Us',
       url: '/business-services',
       icon: 'call'
     },

@@ -4,16 +4,16 @@
     left: -20px;
     top: -20px;
     width: 103%;
-    background-image: url("/src/assets/images/ExamplePic.png");
+    background-image: url("/src/assets/images/LandingPicExample.png");
     background-size:     cover;                     
     background-repeat:   no-repeat;
     background-position: center center; 
-    height: 800px;
+    height: 900px;
 }
 
 .HomePageLogo {
     height: 340px;
-    margin-top: 80px;
+    margin-top: 150px;
 }
 
 .servicesButtons {
@@ -22,7 +22,7 @@
 }
 
 .servicesIcon {
-    font-size: 100pt;
+    font-size: 60pt;
     text-align: center;
 }
 
@@ -32,24 +32,94 @@ h1, h2, h3, h4, h5, p {
 
 .centerText {
     text-align: center;
+    font-family: 'Montserrat Alternates', sans-serif;
+    color: #F9FCF6;
+    letter-spacing: 1.2px;
+    font-weight: 300;
 }
+
+p {
+    letter-spacing: 1.5px;
+}
+
+#title {
+    font-size: 30pt;
+    font-weight: 100;
+}
+
+#aboutUsPic {
+    width: 50%;
+    float: right;
+    padding: 8px;
+    margin: 8px;
+}
+
+
 
 
 // Xl Screens 1140px and Higher
 @media screen and (min-width: 1140px) {
-
+    #aboutUsText {
+        letter-spacing: 2px;
+        line-height: 1.6em;
+        font-size: 16pt;
+    }
 }
 // lg Screen 960px to 1139px
 @media screen and (min-width: 960px) and (max-width: 1139px){ 
-
+    
 }
 
-// md screen 720px to 956px
+// md screen 720px to 956px Ipad Pro
 @media screen and (min-width: 720px) and (max-width: 956px) {
+    .introBackGround {
+        left: -20px;
+        top: 0px;
+        width: 105%;
+        height: 800px;
+    }
+    .HomePageLogo {
+        height: 300px;
+        margin-top: 160px;
+    }
+}   
 
+// xm 540px to 719px and under Blue Tablet
+@media screen and (min-width: 540px) and (max-width: 719px) {
+    .introBackGround {
+        left: -20px;
+        top: 0px;
+        width: 107%;
+        height: 700px;
+    }
+    .HomePageLogo {
+        height: 300px;
+        margin-top: 130px;
+    }
 }
 
-// xs 719 and under
-@media screen and (max-width: 719px) {
-
+// xs 539 and smaller Android Phone
+@media screen and (max-width: 539px) {
+    .introBackGround {
+        left: -16px;
+        top: 0px;
+        width: 110%;
+        height: 500px;
+    }
+    .HomePageLogo {
+        height: 200px;
+        margin-top: 50px;
+    }
+    .servicesButtons {
+        height: 60px;
+        margin-top: 10px;
+    }
+    #aboutUsPic {
+        position: relative;
+        width: 120%;
+        float: none;
+        left: -26px;
+        padding: 0px;
+        margin: 0px;
+    }
 }
