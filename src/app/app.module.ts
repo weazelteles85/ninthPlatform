@@ -28,7 +28,7 @@ import { AngularFireAuth } from 'angularfire2/auth';
   providers: [
     StatusBar,
     SplashScreen,
-    { provide: RouteReuseStrategy, useClass: IonicRouteStrategy, },
+    { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
     AngularFireAuth
   ],
   bootstrap: [AppComponent]

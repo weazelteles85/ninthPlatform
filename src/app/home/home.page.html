@@ -7,7 +7,7 @@
       <ion-button shape="round" size="large" class="servicesButtons" color="primary" href="/design">
         Design Services
       </ion-button>
-      <ion-button shape="round" size="large" class="servicesButtons" color="primary" href="/rendering" >
+      <ion-button shape="round" size="large" class="servicesButtons" color="primary" (click)="triggerScrollTo(aboutUs)" >
         Rendering Services
       </ion-button>
     </ion-row>
@@ -79,7 +79,7 @@
     <ion-col offsetXl="2" sizeXl="8">
       <ion-row>
         <ion-col size="12">
-          <h1 class="centerText">Our Goal</h1>
+          <h1 #aboutUs id="aboutUs" class="centerText">Our Goal</h1>
         </ion-col>
       </ion-row>
       <ion-row>

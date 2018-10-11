@@ -1,19 +1,30 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild, OnInit, ElementRef } from '@angular/core';
+import { ScrollingService } from '../scrolling.service';
+
 
 @Component({
   selector: 'app-home',
   templateUrl: 'home.page.html',
   styleUrls: ['home.page.scss'],
 })
-export class HomePage {
+export class HomePage implements OnInit {
+  @ViewChild('aboutUs') aboutUsEl: ElementRef;
+
+  constructor(private scrollService: ScrollingService) {
+  }
+
+  ngOnInit() {
+    this.scrollService.setAboutUsElement(this.aboutUsEl);
+  }
+
+  // ngAfterViewChecked() {
+  //   this.scrollService.setAboutUsElement(this.aboutUsEl);
+  // }
 
 
-  slideOpts = {
-    init: 'true',
-    grabCursor: 'true',
-    autoplay: {
-      delay: 8000,
-    },
-  };
-
+  public triggerScrollTo(el:Element) {
+    console.log(this.aboutUsEl);
+    this.scrollService.triggerScrollToAboutUs();
+    //this.aboutUsEl.nativeElement.scrollIntoView();
+  }
 }
