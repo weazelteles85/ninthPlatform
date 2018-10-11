@@ -1,5 +1,4 @@
 import { Injectable, ElementRef } from '@angular/core';
-import { ScrollToService, ScrollToConfigOptions } from '@nicky-lenaers/ngx-scroll-to';
 
 @Injectable({
   providedIn: 'root'
@@ -7,8 +6,6 @@ import { ScrollToService, ScrollToConfigOptions } from '@nicky-lenaers/ngx-scrol
 export class ScrollingService {
 
   aboutUsEl: ElementRef;
-
-  constructor(private scrollingService: ScrollToService) { }
 
   public setAboutUsElement(el: ElementRef) {
     this.aboutUsEl = el;

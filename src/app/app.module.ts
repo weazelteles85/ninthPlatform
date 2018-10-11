@@ -12,6 +12,7 @@ import { HeaderComponent } from './header/header.component';
 import { AngularFireModule } from '@angular/fire';
 import { environment } from '../environments/environment';
 import { AngularFireAuth } from 'angularfire2/auth';
+import { ScrollingService } from './scrolling.service';
 
 
  
@@ -28,7 +29,8 @@ import { AngularFireAuth } from 'angularfire2/auth';
   providers: [
     StatusBar,
     SplashScreen,
-    { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
+    ScrollingService,
+    { provide: RouteReuseStrategy, useClass: IonicRouteStrategy},
     AngularFireAuth
   ],
   bootstrap: [AppComponent]
