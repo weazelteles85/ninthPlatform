@@ -3,7 +3,7 @@
     left: -20px;
     top: -20px;
     width: 103%;
-    background-image: url("/src/assets/images/RenderingBanner.png");
+    background-image: url("/src/assets/images/ContactUsBanner.png");
     background-size:     cover;                     
     background-repeat:   no-repeat;
     background-position: center center; 
@@ -21,50 +21,57 @@
     top: 60px;
     font-size: 35pt;
     text-transform: uppercase;
-    font-family: 'Open Sans', sans-serif;
 }
 
 .contentTitle {
     font-size: 25pt;
+    font-family: 'Montserrat Alternates', sans-serif;
     font-weight: 100;
+}
+
+.requestDesignBtn {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.phoneNumberText {
+    font-size: 18pt;
     font-family: 'Open Sans', sans-serif;
 }
 
-h3 {
-    color: #F9FCF6;
-    font-family: 'Open Sans', sans-serif;
+ion-icon {
+    font-size: 30pt;
 }
 
-ion-card {
-    float: right;
-    color: #F9FCF6;
-    background-color: #064789;
-    margin-bottom: -20px;
-    min-height: 220px;
-    width: 95%;
+ion-card, ion-card-title {
+    color: #262626;
+    background-color: #F9FCF6;
 }
 
-ion-card-title {
-    font-size: 24pt;
+form {
+    background-color: #F9FCF6;
 }
 
-ion-card-content {
+ion-item {
+    color: #262626;
     font-size: 16pt;
 }
 
-span ion-icon {
-    position: relative;
-    top: -240px;
-    left: -20px;
+ion-item:hover {
+    color: #F9FCF6;
+}
+
+ion-icon {
     color: #ED7F1E;
-    font-size: 50pt;
+}
+
+.descriptionHeight {
+
 }
 
 // Xl Screens 1140px and Higher
 @media screen and (min-width: 1140px) { 
-    ion-card {
-        margin-top: 40px;
-    }
+    
     
 }
 // lg Screen 960px to 1139px
@@ -88,14 +95,6 @@ span ion-icon {
         font-size: 28pt;
         text-transform: uppercase;
     }
-    .contentTitle {
-        font-size: 24pt;
-        font-family: 'Open Sans', sans-serif;
-    }
-
-    span ion-icon {
-        left: -10px;
-    }
 }   
 
 // xm 540px to 719px and under Blue Tablet
@@ -114,13 +113,10 @@ span ion-icon {
         font-size: 28pt;
         text-transform: uppercase;
     }
-    .contentTitle {
-        font-size: 24pt;
-        font-family: 'Open Sans', sans-serif;
-    }
-    span ion-icon {
-        left: -10px;
-        top: -230px;
+
+    .phoneNumberText {
+        font-size: 14pt;
+        padding-left: 6px;
     }
 
 }
@@ -132,22 +128,13 @@ span ion-icon {
         left: 0px;
         top: 0px;
         width: 103%;
-        height: 340px;
+        height: 260px;
     }
     
     .titleText {
         position: relative;
-        top: 130px;
+        top: 80px;
         font-size: 28pt;
-        text-transform: uppercase;
     }
-    .contentTitle {
-        font-size: 24pt;
-        font-family: 'Open Sans', sans-serif;
-        margin-bottom: 20px;
-    }
-    span ion-icon {
-        left: -10px;
-        top: -230px;
-    }
+
 }

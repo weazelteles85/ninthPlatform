@@ -1,0 +1,50 @@
+<ion-footer>
+  <ion-toolbar>
+    <ion-show-when size="xl, lg, md, sm">
+      <ion-row>
+        <ion-col offsetXl="2" sizeXl="4">
+          <a target="blank" href="mailto:design@ninthplatform.com">
+            <span>
+              <ion-icon color="primary" slot="start" name="mail"></ion-icon> design@ninthplatform.com
+            </span></a>
+        </ion-col>
+        <ion-col sizeXl="4">
+          <a target="blank" href="tel:408-204-9868">
+            <span>
+              <ion-icon color="primary" slot="start" name="call"></ion-icon>408-204-9868
+            </span></a>
+        </ion-col>
+        <ion-show-when size="xl">
+          <ion-col size="2">
+            <span class="telesApps">Website by: <img src="/src/assets/icon/LogoBlackLong.png" alt="Teles Apps Logo"></span>
+          </ion-col>
+        </ion-show-when>
+        <ion-hide-when size="xl">
+          <ion-col size="1"></ion-col>
+          <img id="smallLogo" src="/src/assets/icon/HexEmpty.png" alt="Teles Apps Small Logo">
+        </ion-hide-when>
+      </ion-row>
+    </ion-show-when>
+    <ion-hide-when size="xl, lg, md, sm">
+      <ion-row>
+        <ion-col size="2"><img src="/src/assets/icon/HexEmpty.png" style="width:35px" alt=""></ion-col>
+        <ion-col offset="1" size="4">
+          <a href="mailto:design@ninthplatform.com">
+            <ion-button expand="block" color="primary">
+              <ion-icon color="light" slot="icon-only" name="mail"></ion-icon>
+              <!-- <ion-icon color="light" slot="icon-only" name="call"></ion-icon> -->
+            </ion-button>
+          </a>
+        </ion-col>
+        <ion-col offset="1" size="4">
+          <a href="tel:408-204-9868">
+            <ion-button expand="block" color="primary">
+              <ion-icon color="light" slot="icon-only" name="call"></ion-icon>
+            </ion-button>
+          </a>
+          <ion-icon slot="center" name="call"></ion-icon>
+        </ion-col>
+      </ion-row>
+    </ion-hide-when>
+  </ion-toolbar>
+</ion-footer>

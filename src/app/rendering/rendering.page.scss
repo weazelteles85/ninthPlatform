@@ -13,6 +13,7 @@
 .centerText {
     text-align: center;
     color: #F9FCF6;
+    font-family: 'Montserrat Alternates', sans-serif;
 }
 
 .titleText {
@@ -20,6 +21,7 @@
     top: 60px;
     font-size: 35pt;
     text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .contentTitle {
@@ -28,9 +30,35 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+ion-card {
+    float: right;
+    color: #F9FCF6;
+    background-color: #064789;
+    margin-bottom: -20px;
+    min-height: 280px;
+    width: 95%;
+}
+
+ion-card-title {
+    font-size: 24pt;
+}
+
+ion-card-content {
+    font-size: 16pt;
+}
+
+span ion-icon {
+    position: relative;
+    top: -295px;
+    left: -20px;
+    color: #ED7F1E;
+    font-size: 50pt;
+}
+
 h3 {
     color: #F9FCF6;
     font-family: 'Open Sans', sans-serif;
+    margin-bottom: 20px;
 }
 
 ion-item {
@@ -45,6 +73,8 @@ ion-icon {
 
 // Xl Screens 1140px and Higher
 @media screen and (min-width: 1140px) { 
+
+
     
     
 }
@@ -77,8 +107,8 @@ ion-icon {
     h3 {
         font-size: 14pt;
     }
-    ion-item {
-        font-size: 12pt;
+    span ion-icon {
+        left: -10px;
     }
 }   
 
@@ -106,8 +136,9 @@ ion-icon {
     h3 {
         font-size: 14pt;
     }
-    ion-item {
-        font-size: 12pt;
+    span ion-icon {
+        left: -10px;
+        top: -290px;
     }
 
 }
@@ -136,7 +167,17 @@ ion-icon {
     h3 {
         font-size: 14pt;
     }
-    ion-item {
-        font-size: 12pt;
+    span ion-icon {
+        left: -10px;
+        top: -290px;
     }
+
+    ion-card-title {
+        font-size: 20pt;
+    }
+    
+    ion-card-content {
+        font-size: 14pt;
+    }
+    
 }

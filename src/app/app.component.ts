@@ -14,7 +14,7 @@ export class AppComponent {
   public appPages = [
     {
       title: 'Home',
-      url: '/home',
+      url: '/',
       icon: 'home'
     },
     {
@@ -25,16 +25,16 @@ export class AppComponent {
     {
       title: 'Rendering',
       url: '/rendering',
-      icon: 'brush'
+      icon: 'color-wand'
     },
     {
       title: 'About Us',
       url: '/home',
-      icon: 'happy',
+      icon: 'contact',
     },
     {
       title: 'Contact Us',
-      url: '/business-services',
+      url: '/contact-us',
       icon: 'call'
     },
   ];

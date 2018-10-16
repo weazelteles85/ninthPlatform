@@ -22,13 +22,5 @@
   <ion-router-outlet *ngIf="windowSize < 768" style="margin-top:50px" main></ion-router-outlet>
   <ion-router-outlet *ngIf="windowSize >= 768" style="margin-top:90px" main></ion-router-outlet>
   <!-- Footer Bellow -->
-  <ion-footer>
-    <ion-toolbar>
-      <ion-row>
-        <ion-col size="12">
-          Footer Content
-        </ion-col>
-      </ion-row>
-    </ion-toolbar>
-  </ion-footer>
+  <app-footer></app-footer>
 </ion-app>

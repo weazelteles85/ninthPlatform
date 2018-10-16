@@ -1,0 +1,31 @@
+span ion-icon {
+    position: relative;
+    top: 8px;
+    font-size: 22pt;
+}
+
+a {
+    color: inherit; /* blue colors for links too */
+    text-decoration: inherit;
+}
+
+.alignTextRight {
+    text-align: end;
+}
+
+
+#smallLogo {
+    width: 40px;
+}
+
+.telesApps {
+    text-align: end;
+    position: relative;
+    top: 10px;
+}
+
+ion-footer img {
+    width: 100px;
+    margin-bottom: -10px;
+}
+

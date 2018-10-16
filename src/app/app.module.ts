@@ -13,12 +13,13 @@ import { AngularFireModule } from '@angular/fire';
 import { environment } from '../environments/environment';
 import { AngularFireAuth } from 'angularfire2/auth';
 import { ScrollingService } from './scrolling.service';
+import { FooterComponent } from './footer/footer.component';
 
 
  
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent],
+  declarations: [AppComponent, HeaderComponent, FooterComponent],
   entryComponents: [],
   imports: [
     BrowserModule,
