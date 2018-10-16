@@ -3,7 +3,7 @@
 // `ng build --env=prod` then `environment.prod.ts` will be used instead.
 // The list of which env maps to which file can be found in `.angular-cli.json`.
 export const environment = {
-  SENDGRID_API_KEY: "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"
+  production: true,
 };
 
 /*
