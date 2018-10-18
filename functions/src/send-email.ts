@@ -11,5 +11,5 @@ export const basicSendEmail = functions.https.onRequest((request, response) => {
         response.status(400).send('ERROR you must supply a name :(');
     }
 
-    response.send('Update hello ${name}');
+    response.send('hello ${{name}}');
 })
