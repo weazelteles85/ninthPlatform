@@ -62,24 +62,24 @@
       </ion-row>
       <ion-row>
         <ion-col size="12">
-          <form (ngSubmit)="logForm()">
+          <form (ngSubmit)="sendEmail()">
             <ion-item>
               <ion-label>Name: </ion-label>
-              <ion-input type="text" [(ngModel)]="todo.title" name="title"></ion-input>
+              <ion-input type="text"  name="title"></ion-input>
             </ion-item>
             <ion-item>
               <ion-label>Business: </ion-label>
-              <ion-input [(ngModel)]="todo.description" name="description"></ion-input>
+              <ion-input name="description"></ion-input>
             </ion-item>
             <ion-item>
               <ion-label>Email: </ion-label>
-              <ion-input [(ngModel)]="todo.description" name="description"></ion-input>
+              <ion-input name="description"></ion-input>
             </ion-item>
             <ion-item>
               <ion-label>Description: </ion-label>
-              <ion-textarea [(ngModel)]="todo.description" name="description"></ion-textarea>
+              <ion-textarea name="description"></ion-textarea>
             </ion-item>
-            <ion-button size="large" expand="full" ion-button type="submit" block (click)="sendEmail()">Submit</ion-button>
+            <ion-button size="large" expand="full" ion-button type="submit" block>Submit</ion-button>
           </form>
         </ion-col>
       </ion-row>

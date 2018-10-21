@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { environment } from '../../environments/environment'
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-contact-us',
@@ -8,27 +9,23 @@ import { environment } from '../../environments/environment'
 })
 export class ContactUsPage implements OnInit {
   
-  sendGridKey: any;
+  endpoint = 'https://us-central1-ninthplatform-c05d4.cloudfunctions.net/basicSendEmail';
 
 
-  constructor() { 
-    // this.sendGridKey = environment.SENDGRID_API_KEY;
+  constructor(private http: HttpClient) { 
   }
 
   ngOnInit() {
   }
 
   sendEmail() {
-//     const sgMail = require('@sendgrid/mail');
-//   sgMail.setApiKey(this.sendGridKey);
-//   const msg = {
-//   to: 'test@example.com',
-//   from: 'test@example.com',
-//   subject: 'Sending with SendGrid is Fun',
-//   text: 'and easy to do anywhere, even with Node.js',
-//   html: '<strong>and easy to do anywhere, even with Node.js</strong>',
-// };
-// sgMail.send(msg);
+    console.log('sendEmail called');
+    const data = {
+      toEmail: 'claudioteles85@gmail.com',
+      toName: 'Raidax Test'
+    }
+
+    this.http.post(this.endpoint, data).subscribe()
   }
 
 }

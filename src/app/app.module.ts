@@ -14,6 +14,9 @@ import { environment } from '../environments/environment';
 import { AngularFireAuth } from 'angularfire2/auth';
 import { ScrollingService } from './scrolling.service';
 import { FooterComponent } from './footer/footer.component';
+import {HttpClientModule} from '@angular/common/http';
+
+
 
 
  
@@ -26,6 +29,7 @@ import { FooterComponent } from './footer/footer.component';
     IonicModule.forRoot(),
     AppRoutingModule,
     AngularFireModule,
+    HttpClientModule
   ],
   providers: [
     StatusBar,
