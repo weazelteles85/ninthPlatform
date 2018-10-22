@@ -3,7 +3,7 @@
     left: -20px;
     top: -20px;
     width: 103%;
-    background-image: url("/src/assets/images/DesignBanner.png");
+    background-image: url("/src/assets/images/DrawingtoRender.jpeg");
     background-size:     cover;                     
     background-repeat:   no-repeat;
     background-position: center center; 
@@ -44,7 +44,7 @@ ion-card-title {
 }
 
 ion-card-content {
-    font-size: 16pt;
+    font-size: 14pt;
 }
 
 span ion-icon {
@@ -73,11 +73,15 @@ ion-icon {
 
 // Xl Screens 1140px and Higher
 @media screen and (min-width: 1140px) { 
-
-
-    
     
 }
+// Custom Size
+@media screen and (min-width: 1140px) and (max-width: 1500px){ 
+    ion-card-content {
+        font-size: 12pt;
+    }
+}
+
 // lg Screen 960px to 1139px
 @media screen and (min-width: 960px) and (max-width: 1139px){ 
     
