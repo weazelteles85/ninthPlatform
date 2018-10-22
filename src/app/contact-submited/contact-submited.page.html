@@ -1,9 +1,72 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>contact-submited</ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content padding>
-
+<ion-content>
+  <!-- ******** Banner Area ********** -->
+  <div class="bannerArea">
+    <ion-row justify-content-center>
+      <ion-col size="12">
+        <h1 class="centerText titleText">Contact Us</h1>
+      </ion-col>
+    </ion-row>
+  </div>
+  <!-- ******** End Of Banner Area ********** -->
+  <ion-row>
+    <ion-col offsetXl="2" sizeXl="8">
+      <h1 class="centerText contentTitle">Let us start working for you immediately</h1>
+      <ion-row justify-content-center>
+        <a target="blank" href="https://www.cognitoforms.com/MAGDesignServices/DesignRequestFormTEST">
+          <ion-button shape="round" size="large" class="requestDesignBtn" color="primary" (click)="onClick()">
+            <ion-icon color="light" slot="start" name="clipboard"></ion-icon> Request Design
+          </ion-button>
+        </a>
+      </ion-row>
+      <hr>
+      <ion-row padding>
+        <ion-col sizeXl="6" sizeLg="6" sizeMd="6" sizeSm="6" sizeXs="12">
+          <a target="blank" href="http://maps.google.com/?q=10 BUCKEYE AVE. Oakland, CA. 94618">
+            <ion-card>
+              <ion-card-content>
+                <ion-row align-items-center>
+                  <ion-col align-self-end size="2">
+                    <span>
+                      <ion-icon color="tertiary" slot="start" name="pin"></ion-icon>
+                    </span>
+                  </ion-col>
+                  <ion-col size="10">
+                    <p>
+                      10 BUCKEYE AVE.<br>
+                      Oakland, CA. 94618
+                    </p>
+                  </ion-col>
+                </ion-row>
+              </ion-card-content>
+            </ion-card>
+          </a>
+        </ion-col>
+        <ion-col sizeXl="6" sizeLg="6" sizeMd="6" sizeSm="6" sizeXs="12">
+          <a target="blank" href="tel:408-204-9868">
+            <ion-card>
+              <ion-card-content>
+                <ion-row align-items-center>
+                  <ion-col align-self-end size="2">
+                    <span>
+                      <ion-icon color="tertiary" slot="start" name="call"></ion-icon>
+                    </span>
+                  </ion-col>
+                  <ion-col size="10">
+                    <p class="phoneNumberText">408-204-9868</p>
+                  </ion-col>
+                </ion-row>
+              </ion-card-content>
+            </ion-card>
+          </a>
+        </ion-col>
+      </ion-row>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col size="12">
+      <h1 class="centerText contentTitle">Your email has been submited!</h1>
+      <h2 class="centerText">We will be contacting you shortly, thank you!</h2>
+    </ion-col>
+  </ion-row>
+  <div class="footerSpace"></div>
 </ion-content>

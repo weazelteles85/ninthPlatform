@@ -1,3 +1,10 @@
+ion-input.ng-invalid.ng-touched, textarea.ng-invalid.ng-touched {
+    border: 1px solid red;
+}
+ion-textarea.ng-invalid.ng-touched, textarea.ng-invalid.ng-touched {
+    border: 1px solid red;
+}
+
 .bannerArea {
     position: relative;
     left: -20px;
