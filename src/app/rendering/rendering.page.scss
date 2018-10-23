@@ -63,12 +63,17 @@ h3 {
 
 ion-item {
     color: #F9FCF6;
-    background-color: #262626;
+    background-color: #393939;
     font-size: 16pt;
 }
 
 ion-icon {
     color: #ED7F1E;
+}
+
+.galleryPic {
+    background-size: cover;
+    min-height: 200px;
 }
 
 // Xl Screens 1140px and Higher
