@@ -6,6 +6,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { IonicModule } from '@ionic/angular';
 
 import { RenderingPage } from './rendering.page';
+import { ImageModalComponent } from './image-modal/image-modal.component';
 
 const routes: Routes = [
   {
@@ -21,6 +22,7 @@ const routes: Routes = [
     IonicModule,
     RouterModule.forChild(routes)
   ],
-  declarations: [RenderingPage,],
+  declarations: [RenderingPage, ImageModalComponent,],
+  entryComponents: [ImageModalComponent]
 })
 export class RenderingPageModule {}

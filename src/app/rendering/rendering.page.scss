@@ -73,8 +73,15 @@ ion-icon {
 
 .galleryPic {
     background-size: cover;
+    background-position: center;
     min-height: 200px;
 }
+
+.selected {
+    color: red;
+    background-color: blue;
+}
+
 
 // Xl Screens 1140px and Higher
 @media screen and (min-width: 1140px) { 
