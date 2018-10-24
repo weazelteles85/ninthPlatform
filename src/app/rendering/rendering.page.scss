@@ -77,15 +77,17 @@ ion-icon {
     min-height: 200px;
 }
 
-.selected {
-    color: red;
-    background-color: blue;
+.galleryPic:hover {
+    cursor: pointer;
 }
+
 
 
 // Xl Screens 1140px and Higher
 @media screen and (min-width: 1140px) { 
-    
+    ion-button {
+        margin-right: 40px;
+    }
 }
 // Custom Size
 @media screen and (min-width: 1140px) and (max-width: 1500px){ 
@@ -125,6 +127,9 @@ ion-icon {
     }
     span ion-icon {
         left: -10px;
+    }
+    ion-button {
+        margin-right: 40px;
     }
 }   
 

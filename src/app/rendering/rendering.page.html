@@ -71,14 +71,14 @@
   <ion-row>
     <ion-col offsetXl="2" sizeXl="8">
       <ion-row>
-        <ion-col push="1" align-self-end size="6">
-          <ion-button #enviromentBtn size="large" (click)="enviromentalToggle()">
+        <ion-col class="centerText" align-self-end sizeXl="12">
+          <ion-button #enviromentBtn size="large" (click)="enviromentalToggle()"
+          [color]="enviromentalColor">
             Environmental Renderings
           </ion-button>
-        </ion-col>
-        <ion-col push="1" size="6">
-          <ion-button align-items-end size="large" (click)="whiteSpaceToggle()">
-            White Space Renderings.
+          <ion-button align-items-end size="large" (click)="whiteSpaceToggle()"
+          [color]="whiteSpaceColor">
+            White Space Renderings
           </ion-button>
         </ion-col>
       </ion-row>
@@ -87,10 +87,17 @@
   <ion-row>
     <ion-col offsetXl="2" sizeXl="8">
       <ion-grid>
-        <ion-row>
-          <ion-col sizeXl="3" sizeXs="12" *ngFor="let image of imageRefs; let i = index">
+        <ion-row *ngIf="isWhiteSpace">
+          <ion-col sizeXl="3" sizeLg="4" sizeMd="4" sizeSm="6" sizeXs="12" *ngFor="let image of whiteSpaceImg; let i = index">
             <div (click)="openImageModal(image)">
               <div class="galleryPic" [style.background-image]="'url(/src/assets/images/Whitespace-renders/' + image + ')'"></div>
+            </div>
+          </ion-col>
+        </ion-row>
+        <ion-row *ngIf="isEnviromental">
+          <ion-col sizeXl="3" sizeLg="4" sizeMd="4" sizeSm="6" sizeXs="12" *ngFor="let image of enviromentalImg; let i = index">
+            <div (click)="openImageModal(image)">
+              <div class="galleryPic" [style.background-image]="'url(/src/assets/images/3D-Renders/' + image + ')'"></div>
             </div>
           </ion-col>
         </ion-row>
