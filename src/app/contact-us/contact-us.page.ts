@@ -44,7 +44,7 @@ export class ContactUsPage implements OnInit {
     console.log(description);
 
     const data = {
-      toEmail: 'claudioteles85@gmail.com',
+      toEmail: 'jason@ninthplatform.com',
       toName: 'Test', //<--- This value is currently not being used for anything in the cloud functions
       eMailSubject: 'New Contact-Us Form From Your Website',
       htmlBody: `<p><strong>Name: </strong>${name}</p>

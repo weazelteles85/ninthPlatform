@@ -59,12 +59,18 @@ export class RenderingPage implements OnInit {
     
   }
 
-  async openImageModal(index) {
-    console.log(index);
+  async openImageModal(index, indexNumber) {
+    console.log('number at: ');
+    console.log(indexNumber);
     if(this.isWhiteSpace) {
       const modal = await this.modalController.create({
         component: ImageModalComponent,
-        componentProps: { url: "/src/assets/images/Whitespace-renders/" + index },
+        componentProps: { 
+          urlBase: "/src/assets/images/Whitespace-renders/",
+          urlIndex: index,
+          urlList: this.whiteSpaceImg,
+          indexNum: indexNumber
+        },
         cssClass: "telesModal"
       });
       return await modal.present();
@@ -72,7 +78,12 @@ export class RenderingPage implements OnInit {
     else {
       const modal = await this.modalController.create({
         component: ImageModalComponent,
-        componentProps: { url: "/src/assets/images/3D-Renders/" + index },
+        componentProps: { 
+          urlBase: "/src/assets/images/3D-Renders/",
+          urlIndex: index,
+          urlList: this.enviromentalImg,
+          indexNum: indexNumber
+        },
         cssClass: "telesModal"
       });
       return await modal.present();

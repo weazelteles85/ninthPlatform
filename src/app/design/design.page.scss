@@ -1,3 +1,7 @@
+ion-content { // <--- THis tag is used in the global but is required here for Edge Browser from microsoft
+    background-color: #393939;
+}
+
 .bannerArea {
     position: relative;
     left: -20px;

@@ -13,10 +13,10 @@
       <ion-row>
         <ion-col size="12">
           <h3>
-            At NINTHPLATFORM we are taking renderings to a level the
-            industry has been asking for. As customers demand to see more than a 2D & 3D
-            line drawings, NINTHPLATFORM has raised the bar to support you deliver the quality
-            imagery that is required to win business.
+            The industry requested it, and we’re listening.  At NINTHPLATFORM we 
+            are taking renderings to a new level. As customers demand to see 
+            more than a 2D & 3D line drawings, NINTHPLATFORM has raised the bar 
+            to support you and deliver the quality imagery required to win business.
           </h3>
         </ion-col>
       </ion-row>
@@ -27,9 +27,9 @@
               <ion-card-title class="centerText">Clarifying</ion-card-title>
             </ion-card-header>
             <ion-card-content class="centerText">
-              As you present clear information it allows your customers to
-              clearly see their offering and move the sales process forward,
-              closing in on the final specification.
+              As you present clear information it allows your customers to easily 
+              see their offering and move the sales process forward, closing in 
+              on the final specification.
             </ion-card-content>
           </ion-card>
           <span>
@@ -42,8 +42,9 @@
               <ion-card-title class="centerText">Quality</ion-card-title>
             </ion-card-header>
             <ion-card-content class="centerText">
-              Raising the quality of your response and differentiating from the competition,
-              instills the confidence you customer needs to see in order to trust your work
+              Raising the quality of your response and differentiating from the 
+              competition, instills the confidence your customers need to see 
+              in order to trust your work.
             </ion-card-content>
           </ion-card>
           <span>
@@ -56,9 +57,9 @@
               <ion-card-title class="centerText">Type</ion-card-title>
             </ion-card-header>
             <ion-card-content class="centerText">
-              Whether in need for a white space thought starter or a detailed
-              environment NINTHPLATFORM provides the finishes and detail customized
-              to the solutions you are presenting to your customer
+              Whether needing a white space thought starter or a detailed environment 
+              rendering NINTHPLATFORM provides the finishes and details customized to 
+              the solutions you are presenting to the client.
             </ion-card-content>
           </ion-card>
           <span>
@@ -89,14 +90,14 @@
       <ion-grid>
         <ion-row *ngIf="isWhiteSpace">
           <ion-col sizeXl="3" sizeLg="4" sizeMd="4" sizeSm="6" sizeXs="12" *ngFor="let image of whiteSpaceImg; let i = index">
-            <div (click)="openImageModal(image)">
+            <div (click)="openImageModal(image, i)">
               <div class="galleryPic" [style.background-image]="'url(/src/assets/images/Whitespace-renders/' + image + ')'"></div>
             </div>
           </ion-col>
         </ion-row>
         <ion-row *ngIf="isEnviromental">
           <ion-col sizeXl="3" sizeLg="4" sizeMd="4" sizeSm="6" sizeXs="12" *ngFor="let image of enviromentalImg; let i = index">
-            <div (click)="openImageModal(image)">
+            <div (click)="openImageModal(image, i)">
               <div class="galleryPic" [style.background-image]="'url(/src/assets/images/3D-Renders/' + image + ')'"></div>
             </div>
           </ion-col>
