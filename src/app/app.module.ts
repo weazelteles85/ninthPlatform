@@ -15,10 +15,6 @@ import { AngularFireAuth } from 'angularfire2/auth';
 import { ScrollingService } from './scrolling.service';
 import { FooterComponent } from './footer/footer.component';
 import {HttpClientModule} from '@angular/common/http';
-
-
-
-
  
 
 @NgModule({
